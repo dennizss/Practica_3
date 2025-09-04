@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../Documentos/Github/Practica_3/Practica3_Ensamblador.X/Practice3.asm Practice3.asm
+SOURCEFILES_QUOTED_IF_SPACED=Practice3.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/776492108/Practice3.o ${OBJECTDIR}/Practice3.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/776492108/Practice3.o.d ${OBJECTDIR}/Practice3.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Practice3.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Practice3.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/776492108/Practice3.o ${OBJECTDIR}/Practice3.o
+OBJECTFILES=${OBJECTDIR}/Practice3.o
 
 # Source Files
-SOURCEFILES=../Documentos/Github/Practica_3/Practica3_Ensamblador.X/Practice3.asm Practice3.asm
+SOURCEFILES=Practice3.asm
 
 
 
@@ -89,14 +89,6 @@ FINAL_IMAGE_NAME_MINUS_EXTENSION=${DISTDIR}/Practica3_Ensamblador.X.${IMAGE_TYPE
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: pic-as-assembler
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/776492108/Practice3.o: ../Documentos/Github/Practica_3/Practica3_Ensamblador.X/Practice3.asm  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/776492108" 
-	@${RM} ${OBJECTDIR}/_ext/776492108/Practice3.o 
-	${MP_AS} -mcpu=PIC18LF4550 -c \
-	-o ${OBJECTDIR}/_ext/776492108/Practice3.o \
-	../Documentos/Github/Practica_3/Practica3_Ensamblador.X/Practice3.asm \
-	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
-	
 ${OBJECTDIR}/Practice3.o: Practice3.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/Practice3.o 
@@ -106,14 +98,6 @@ ${OBJECTDIR}/Practice3.o: Practice3.asm  nbproject/Makefile-${CND_CONF}.mk
 	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 else
-${OBJECTDIR}/_ext/776492108/Practice3.o: ../Documentos/Github/Practica_3/Practica3_Ensamblador.X/Practice3.asm  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/776492108" 
-	@${RM} ${OBJECTDIR}/_ext/776492108/Practice3.o 
-	${MP_AS} -mcpu=PIC18LF4550 -c \
-	-o ${OBJECTDIR}/_ext/776492108/Practice3.o \
-	../Documentos/Github/Practica_3/Practica3_Ensamblador.X/Practice3.asm \
-	  -mdfp="${DFP_DIR}/xc8"  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
-	
 ${OBJECTDIR}/Practice3.o: Practice3.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/Practice3.o 
