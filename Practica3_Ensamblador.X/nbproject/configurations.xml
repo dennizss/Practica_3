@@ -18,10 +18,12 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>../Documentos/Github/Practica_3/Practica3_Ensamblador.X/Practice3.asm</itemPath>
+      <itemPath>Practice3.asm</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../Documentos/Github/Practica_3/Practica3_Ensamblador.X</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
